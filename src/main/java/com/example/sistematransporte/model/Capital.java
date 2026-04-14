@@ -6,7 +6,7 @@ import java.util.List;
 public class Capital {
     private String name;
     private String uf;
-    private List <Rota> estradasAdjacentes = new ArrayList<>();
+    private List <Rota> rotasAdjacentes = new ArrayList<>();
 
     public Capital(){
     }
@@ -24,8 +24,8 @@ public class Capital {
         this.name = name;
     }
 
-    public List<Rota> getEstradasAdjacentes() {
-        return estradasAdjacentes;
+    public List<Rota> getRotasAdjacentes() {
+        return rotasAdjacentes;
     }
 
     public String getUf() {
@@ -37,6 +37,6 @@ public class Capital {
     }
 
     public void adicionarRota(Rota rota){
-        this.estradasAdjacentes.add(rota);
+        this.rotasAdjacentes.add(rota);
     }
 }
