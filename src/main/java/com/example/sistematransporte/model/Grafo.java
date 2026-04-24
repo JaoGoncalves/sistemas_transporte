@@ -1,8 +1,11 @@
 package com.example.sistematransporte.model;
 
+import org.springframework.stereotype.Service;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class Grafo {
 
     private Map<String, Capital> capitais = new HashMap<>();

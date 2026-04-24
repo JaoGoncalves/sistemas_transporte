@@ -1,11 +1,14 @@
 package com.example.sistematransporte.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Capital {
     private String name;
     private String uf;
+    @JsonIgnore
     private List <Rota> rotasAdjacentes = new ArrayList<>();
 
     public Capital(){
